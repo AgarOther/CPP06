@@ -1,13 +1,14 @@
 # Compilation
 CC					=	c++
-CFLAGS				=	-Wall -Wextra -Werror -std=c++98
+CFLAGS				=	-Wall -Wextra -Werror -std=c++98 -g
 
 # Names
 NAME				=	conversion
 
 # Sources & Includes
 SRCS				= 	main.cpp \
-						ScalarConverter.cpp
+						ScalarConverter.cpp \
+						scalar_utils.cpp
 OBJ_FOLDER			=	objs
 
 # Objects
