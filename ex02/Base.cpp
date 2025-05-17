@@ -55,7 +55,7 @@ void Base::identify(Base *p)
 	else if (c)
 		std::cout << CYAN << "Pointer is of type C!" << RESET << std::endl;
 	else
-		std::cout << RED << "Pointer is of no known types." << RESET << std::endl;
+		std::cerr << RED << "Pointer is of no known types." << RESET << std::endl;
 }
 
 void Base::identify(Base &p)
@@ -84,5 +84,5 @@ void Base::identify(Base &p)
 		return;
 	}
 	catch (const std::exception &e) {}
-	std::cout << RED << "Reference is of no known types." << RESET << std::endl;
+	std::cerr << RED << "Reference is of no known types." << RESET << std::endl;
 }
